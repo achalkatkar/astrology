@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astrology Consultation</title>
+  <link rel="stylesheet" href="../css/consultation.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Book Your Astrology Consultation</h1>
+    <p>Gain clarity on your path through personalized readings</p>
+    <a href="#booking" class="btn">Schedule Now</a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Consultation Types</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Natal Chart Reading</h3>
+        <p>Discover your life's blueprint through your birth chart.</p>
+        <p><strong>Duration:</strong> 60 min</p>
+        <p><strong>Price:</strong> $75</p>
+        <button>Book Now</button>
+      </div>
+      <div class="card">
+        <h3>Compatibility Reading</h3>
+        <p>Explore the dynamics between you and your partner.</p>
+        <p><strong>Duration:</strong> 45 min</p>
+        <p><strong>Price:</strong> $60</p>
+        <button>Book Now</button>
+      </div>
+      <div class="card">
+        <h3>Career Guidance</h3>
+        <p>Align your career path with your astrological strengths.</p>
+        <p><strong>Duration:</strong> 30 min</p>
+        <p><strong>Price:</strong> $50</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking" id="booking">
+    <h2>Schedule a Consultation</h2>
+    <form id="consultationForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="date" name="dob" required />
+      <input type="time" name="tob" required />
+      <input type="text" name="location" placeholder="Place of Birth" required />
+      <select name="type" required>
+        <option value="">Select Consultation Type</option>
+        <option value="natal">Natal Chart</option>
+        <option value="compatibility">Compatibility</option>
+        <option value="career">Career Guidance</option>
+      </select>
+      <input type="datetime-local" name="preferredTime" required />
+      <textarea name="message" placeholder="Additional details (optional)"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="confirmation" class="confirmation"></div>
+  </section>
+
+  <script src="../css/consultation.js"></script>
+</body>
+</html>

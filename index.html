@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mangal Astro</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- <link rel="stylesheet" href="./css/horoscope.css"> -->
+  <link rel="stylesheet" href="./css/about.css">
+   <!-- Tailwind CSS CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">mangal<span>astro</span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="./pages/about.html">About Us</a>
+      <a href="./pages/service.html">Services</a>
+      <a href="./pages/product.html">Products</a>
+      <a href="./pages/zodiac.html">Zodiac </a>
+      <a href="./pages/blog.html">Blogs</a>
+      <a href="./pages/contact.html">Contact</a>
+    </nav>
+    <a class="call-btn" href="tel:+919160004027">+91 9160 004 027</a>
+  </header>
+ <!-- Product Section -->
+ <section id="products-section" class="bg-gray-50 py-12 px-4">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-gray-800 mb-2">Our Astrology Products</h2>
+    <p class="text-gray-600">Explore personalized reports, remedies, and tools crafted for your spiritual journey.</p>
+  </div>
+  <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"></div>
+</section>
+
+
+<!-- JavaScript to Render Products -->
+<script>
+  const products = [
+    {
+      title: "Horoscope Reports",
+      description: "Get daily, weekly, and monthly insights based on your sign.",
+      image: "https://cdn-icons-png.flaticon.com/512/9111/9111937.png",
+      link: "./pages/horoscope.html"
+    },
+    {
+      title: "Birth Chart Readings",
+      description: "Detailed natal and compatibility chart interpretations.",
+      image: "https://cdn-icons-png.flaticon.com/512/9016/9016886.png",
+      link: "./pages/birth-chart.html"
+    },
+    {
+      title: "Astrology Consultations",
+      description: "Book a live session with a professional astrologer.",
+      image: "https://cdn-icons-png.flaticon.com/512/9216/9216260.png",
+      link: "./pages/consultation.html"
+    },
+    {
+      title: "Gemstones",
+      description: "Certified gemstones for balancing planetary energies.",
+      image: "https://cdn-icons-png.flaticon.com/512/2503/2503331.png",
+      link: "./pages/gemstone.html"
+    },
+    {
+      title: "Vastu Tools",
+      description: "Improve home harmony with Vastu and Feng Shui items.",
+      image: "https://cdn-icons-png.flaticon.com/512/4322/4322991.png",
+      link: "./pages/vastu-tools.html"
+    },
+    {
+      title: "Astrology E-books",
+      description: "Read and learn from curated guides and astrology PDFs.",
+      image: "https://cdn-icons-png.flaticon.com/512/3145/3145765.png",
+      link: "#"
+    },
+    {
+      title: "Yantras & Talismans",
+      description: "Powerful spiritual tools for protection and success.",
+      image: "https://cdn-icons-png.flaticon.com/512/6813/6813883.png",
+      link: "#"
+    },
+    {
+      title: "Personalized Reports",
+      description: "Career, marriage, health, and life forecasts just for you.",
+      image: "https://cdn-icons-png.flaticon.com/512/9216/9216219.png",
+      link: "#"
+    }
+  ];
+
+  const grid = document.getElementById('product-grid');
+
+  products.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition';
+
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.title}" class="w-14 h-14 mx-auto mb-4">
+      <h3 class="text-xl font-semibold text-gray-800 text-center">${product.title}</h3>
+      <p class="text-sm text-gray-600 text-center mt-2">${product.description}</p>
+      <div class="mt-4 text-center">
+        <a href="${product.link}" class="text-blue-600 font-medium hover:underline">Explore</a>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+</script>
+  <button class="btn">View All</button>
+</div> 
+ <!-- Services Section -->  
+
+<div class="section service-section" id="services">
+  <div class="rotating-img">
+    <img src="./images/tarot.jpg" alt="Tarot Reader">
+  </div>
+  <div class="service-cards">
+    <div class="service-card">Kundli Preparation</div>
+    <div class="service-card">Horoscope Matching</div>
+    <div class="service-card">Vaastu Report</div>
+    <div class="service-card">Finance Horoscope</div>
+  </div>
+</div> 
+ <!-- Contact Section --> 
+
+<div class="section contact-section" id="contact">
+  <img src="./images/request-side-img.jpg" alt="Astrology Writing">
+  <form>
+    <h3>Request Call Back</h3>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <textarea rows="4" placeholder="Your requirement..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+  <script>
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('clicked');
+    });
+  });
+</script>
+
+
+<div class="section">
+  <!-- Left side -->
+  <div class="left">
+    <div class="orbit">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <div class="dot dot4"></div>
+    </div>
+    <img src="./images/rotating-img.jpg" alt="Astro Image" />
+  </div>
+
+  <!-- Right side -->
+  <div class="right">
+    <div class="card">
+      <h3>Kundli Preparation</h3>
+      <p>Kundli preparation and detailed report</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h3>Horoscope Matching</h3>
+      <p>Best Horoscope matching Services in Delhi NCR</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h3>Vaastu Shastra Report</h3>
+      <p>Vaastu Shastra report and corrections</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h3>Finance Horoscope</h3>
+      <p>Finance & love horoscope services</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      cards.forEach(c => c.classList.remove("active"));
+      card.classList.add("active");
+    });
+  });
+</script>
+
+  <!-- View More Button -->
+  <div class="center-button">
+    <button onclick="scrollToWhy()">View More</button>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose" id="whyChoose">
+    <h2>Why Choose Us</h2>
+    <hr />
+    <p>We have enormous knowledge in the field of Astrology<br>
+      which results to Enhance and Excel anyone's life.</p>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919160004027" class="whatsapp-btn" target="_blank">Chat Now</a>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

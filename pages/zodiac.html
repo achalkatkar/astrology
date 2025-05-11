@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zodiac Signs</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .zodiac-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .zodiac-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 16px 24px rgba(0,0,0,0.2);
+    }
+
+    .zodiac-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+      transition: transform 0.4s ease;
+    }
+
+    .zodiac-card:hover .zodiac-icon {
+      transform: rotate(5deg) scale(1.1);
+    }
+
+    .zodiac-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .zodiac-dates {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin: 5px 0;
+    }
+
+    .zodiac-info {
+      font-size: 0.9rem;
+      color: #374151;
+    }
+
+    @media (max-width: 600px) {
+      .zodiac-card {
+        padding: 15px;
+      }
+      .zodiac-name {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>12 Zodiac Signs</h1>
+  <div class="grid-container">
+
+    <div class="zodiac-card">
+      <img src="../images/aries.png" alt="Aries" class="zodiac-icon">
+      <div class="zodiac-name">Aries</div>
+      <div class="zodiac-dates">Mar 21 - Apr 19</div>
+      <div class="zodiac-info">Bold and energetic leader.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/taurus.png" alt="Taurus" class="zodiac-icon">
+      <div class="zodiac-name">Taurus</div>
+      <div class="zodiac-dates">Apr 20 - May 20</div>
+      <div class="zodiac-info">Stable and loyal friend.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/gemini.png" alt="Gemini" class="zodiac-icon">
+      <div class="zodiac-name">Gemini</div>
+      <div class="zodiac-dates">May 21 - Jun 20</div>
+      <div class="zodiac-info">Curious and social thinker.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/cancerpng.png" alt="Cancer" class="zodiac-icon">
+      <div class="zodiac-name">Cancer</div>
+      <div class="zodiac-dates">Jun 21 - Jul 22</div>
+      <div class="zodiac-info">Deeply emotional and caring.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/leopng.png" alt="Leo" class="zodiac-icon">
+      <div class="zodiac-name">Leo</div>
+      <div class="zodiac-dates">Jul 23 - Aug 22</div>
+      <div class="zodiac-info">Confident and charismatic leader.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/virgo.png" alt="Virgo" class="zodiac-icon">
+      <div class="zodiac-name">Virgo</div>
+      <div class="zodiac-dates">Aug 23 - Sep 22</div>
+      <div class="zodiac-info">Detail-oriented and thoughtful.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/libra.png" alt="Libra" class="zodiac-icon">
+      <div class="zodiac-name">Libra</div>
+      <div class="zodiac-dates">Sep 23 - Oct 22</div>
+      <div class="zodiac-info">Balanced and fair-minded.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/scorpio.png" alt="Scorpio" class="zodiac-icon">
+      <div class="zodiac-name">Scorpio</div>
+      <div class="zodiac-dates">Oct 23 - Nov 21</div>
+      <div class="zodiac-info">Intense and powerful thinker.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/sagittarius.png" alt="Sagittarius" class="zodiac-icon">
+      <div class="zodiac-name">Sagittarius</div>
+      <div class="zodiac-dates">Nov 22 - Dec 21</div>
+      <div class="zodiac-info">Adventurous and optimistic.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/capricorn.png" alt="Capricorn" class="zodiac-icon">
+      <div class="zodiac-name">Capricorn</div>
+      <div class="zodiac-dates">Dec 22 - Jan 19</div>
+      <div class="zodiac-info">Disciplined and goal-driven.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/aquarius.png" alt="Aquarius" class="zodiac-icon">
+      <div class="zodiac-name">Aquarius</div>
+      <div class="zodiac-dates">Jan 20 - Feb 18</div>
+      <div class="zodiac-info">Innovative and independent mind.</div>
+    </div>
+
+    <div class="zodiac-card">
+      <img src="../images/pisces.png" alt="Pisces" class="zodiac-icon">
+      <div class="zodiac-name">Pisces</div>
+      <div class="zodiac-dates">Feb 19 - Mar 20</div>
+      <div class="zodiac-info">Compassionate and artistic soul.</div>
+    </div>
+
+  </div>
+</body>
+</html>

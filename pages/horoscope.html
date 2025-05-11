@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zodiac Cards</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f4f6;
+      padding: 40px 20px;
+    }h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1f2937;
+  font-size: 2.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.zodiac-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zodiac-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 24px rgba(0,0,0,0.15);
+}
+
+.zodiac-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.zodiac-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.zodiac-dates {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+.zodiac-details {
+  font-size: 0.9rem;
+  color: #374151;
+  text-align: left;
+  width: 100%;
+}
+
+.zodiac-details strong {
+  display: inline-block;
+  width: 90px;
+  color: #111827;
+}
+
+.zodiac-description {
+  margin-top: auto;
+  font-style: italic;
+  color: #4b5563;
+}
+
+  </style>
+</head>
+<body>  <h1>12 Zodiac Signs</h1>
+  <div class="grid-container"><!-- Aries -->
+<div class="zodiac-card">
+  <img src="../images/aries.png" alt="Aries Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Aries ♈</div>
+  <div class="zodiac-dates">Mar 21 - Apr 19</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Fire</p>
+    <p><strong>Planet:</strong> Mars</p>
+    <p><strong>Modality:</strong> Cardinal</p>
+  </div>
+  <div class="zodiac-description">Bold and energetic leader. Aries dives headfirst into every challenge.</div>
+</div>
+
+<!-- Taurus -->
+<div class="zodiac-card">
+  <img src="../images/taurus.png" alt="Taurus Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Taurus ♉</div>
+  <div class="zodiac-dates">Apr 20 - May 20</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Earth</p>
+    <p><strong>Planet:</strong> Venus</p>
+    <p><strong>Modality:</strong> Fixed</p>
+  </div>
+  <div class="zodiac-description">Loyal and grounded. Taurus thrives in comfort and stability.</div>
+</div>
+
+<!-- Gemini -->
+<div class="zodiac-card">
+  <img src="../images/gemini.png" alt="Gemini Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Gemini ♊</div>
+  <div class="zodiac-dates">May 21 - Jun 20</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Air</p>
+    <p><strong>Planet:</strong> Mercury</p>
+    <p><strong>Modality:</strong> Mutable</p>
+  </div>
+  <div class="zodiac-description">Curious and adaptable. Gemini loves communication and ideas.</div>
+</div>
+
+<!-- Cancer -->
+<div class="zodiac-card">
+  <img src="../images/cancerpng.png" alt="Cancer Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Cancer ♋</div>
+  <div class="zodiac-dates">Jun 21 - Jul 22</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Water</p>
+    <p><strong>Planet:</strong> Moon</p>
+    <p><strong>Modality:</strong> Cardinal</p>
+  </div>
+  <div class="zodiac-description">Deeply intuitive and caring. Cancer values home and family.</div>
+</div>
+
+<!-- Leo -->
+<div class="zodiac-card">
+  <img src="../images/leopng.png" alt="Leo Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Leo ♌</div>
+  <div class="zodiac-dates">Jul 23 - Aug 22</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Fire</p>
+    <p><strong>Planet:</strong> Sun</p>
+    <p><strong>Modality:</strong> Fixed</p>
+  </div>
+  <div class="zodiac-description">Charismatic and proud. Leo shines in the spotlight and loves to lead.</div>
+</div>
+
+<!-- Virgo -->
+<div class="zodiac-card">
+  <img src="../images/virgo.png" alt="Virgo Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Virgo ♍</div>
+  <div class="zodiac-dates">Aug 23 - Sep 22</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Earth</p>
+    <p><strong>Planet:</strong> Mercury</p>
+    <p><strong>Modality:</strong> Mutable</p>
+  </div>
+  <div class="zodiac-description">Analytical and helpful. Virgo strives for perfection in every detail.</div>
+</div>
+
+<!-- Libra -->
+<div class="zodiac-card">
+  <img src="../images/libra.png" alt="Libra Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Libra ♎</div>
+  <div class="zodiac-dates">Sep 23 - Oct 22</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Air</p>
+    <p><strong>Planet:</strong> Venus</p>
+    <p><strong>Modality:</strong> Cardinal</p>
+  </div>
+  <div class="zodiac-description">Charming and diplomatic. Libra values harmony and balance.</div>
+</div>
+
+<!-- Scorpio -->
+<div class="zodiac-card">
+  <img src="../images/scorpio.png" alt="Scorpio Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Scorpio ♏</div>
+  <div class="zodiac-dates">Oct 23 - Nov 21</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Water</p>
+    <p><strong>Planet:</strong> Pluto</p>
+    <p><strong>Modality:</strong> Fixed</p>
+  </div>
+  <div class="zodiac-description">Intense and passionate. Scorpio seeks truth and transformation.</div>
+</div>
+
+<!-- Sagittarius -->
+<div class="zodiac-card">
+  <img src="../images/sagittarius.png" alt="Sagittarius Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Sagittarius ♐</div>
+  <div class="zodiac-dates">Nov 22 - Dec 21</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Fire</p>
+    <p><strong>Planet:</strong> Jupiter</p>
+    <p><strong>Modality:</strong> Mutable</p>
+  </div>
+  <div class="zodiac-description">Adventurous and free-spirited. Sagittarius loves truth and travel.</div>
+</div>
+
+<!-- Capricorn -->
+<div class="zodiac-card">
+  <img src="../images/capricorn.png" alt="Capricorn Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Capricorn ♑</div>
+  <div class="zodiac-dates">Dec 22 - Jan 19</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Earth</p>
+    <p><strong>Planet:</strong> Saturn</p>
+    <p><strong>Modality:</strong> Cardinal</p>
+  </div>
+  <div class="zodiac-description">Disciplined and wise. Capricorn climbs steadily to achieve goals.</div>
+</div>
+
+<!-- Aquarius -->
+<div class="zodiac-card">
+  <img src="../images/aquarius.png" alt="Aquarius Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Aquarius ♒</div>
+  <div class="zodiac-dates">Jan 20 - Feb 18</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Air</p>
+    <p><strong>Planet:</strong> Uranus</p>
+    <p><strong>Modality:</strong> Fixed</p>
+  </div>
+  <div class="zodiac-description">Innovative and independent. Aquarius seeks to improve the world.</div>
+</div>
+
+<!-- Pisces -->
+<div class="zodiac-card">
+  <img src="../images/pisces.png" alt="Pisces Icon" class="zodiac-icon" />
+  <div class="zodiac-name">Pisces ♓</div>
+  <div class="zodiac-dates">Feb 19 - Mar 20</div>
+  <div class="zodiac-details">
+    <p><strong>Element:</strong> Water</p>
+    <p><strong>Planet:</strong> Neptune</p>
+    <p><strong>Modality:</strong> Mutable</p>
+  </div>
+  <div class="zodiac-description">Dreamy and compassionate. Pisces lives in a world of feeling and fantasy.</div>
+</div>
+
+  </div>
+</body>
+</html>

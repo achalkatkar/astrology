@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astrology Birth Chart</title>
+  <link rel="stylesheet" href="../css/birth-chart.css" />
+</head>
+<body>
+
+  <h1>Interactive Astrology Birth Chart</h1>
+
+  <div class="chart-container">
+    <div class="chart-circle">
+      <!-- Planets -->
+      <div class="planet" data-planet="Sun" style="top: 50px; left: 100px;"></div>
+      <div class="planet" data-planet="Moon" style="top: 150px; left: 50px;"></div>
+      <div class="planet" data-planet="Mercury" style="top: 200px; left: 200px;"></div>
+      <!-- More planets can be added similarly -->
+    </div>
+    <p><em>Click on a planet for more details.</em></p>
+  </div>
+
+  <div id="planet-info" class="planet-info">
+    <h3>Planet Information</h3>
+    <p id="planet-name">Planet: <strong>None</strong></p>
+    <p id="planet-sign">Sign: <strong>None</strong></p>
+    <p id="planet-house">House: <strong>None</strong></p>
+    <p id="planet-degree">Degree: <strong>None</strong></p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Planet</th>
+        <th>Sign</th>
+        <th>Degree</th>
+        <th>House</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Sun</td><td>Taurus</td><td>12°</td><td>3rd</td></tr>
+      <tr><td>Moon</td><td>Leo</td><td>25°</td><td>6th</td></tr>
+      <tr><td>Mercury</td><td>Aries</td><td>5°</td><td>2nd</td></tr>
+    </tbody>
+  </table>
+
+  <script src="../css/birth-chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+  /* who we are */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #333;
+  }
+  
+  .who-we-are {
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #f9f9f9;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .experience {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .experience .years {
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+    margin-right: 10px;
+  }
+  
+  .contact-btn {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background: #ff7f50;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .who-we-are {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  
+    .experience {
+      justify-content: center;
+    }
+  }

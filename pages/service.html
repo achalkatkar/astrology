@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astrologer Services</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Service Section -->
+  <section class="bg-white py-12 px-4">
+    <a href="./horoscope.html">
+    <div class="max-w-7xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800 mb-2">Services Offered by Our Astrologer</h2>
+      <p class="text-gray-600">Personalized guidance for every stage of your life journey.</p>
+    </div></a>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto" id="services-grid"></div>
+  </section>
+
+  <!-- JavaScript to Render Services -->
+  <script>
+    const services = [
+      {
+        title: "Birth Chart Reading",
+        description: "Get a detailed interpretation of your natal chart to understand your strengths, weaknesses, and destiny.",
+        icon: "https://cdn-icons-png.flaticon.com/512/9216/9216144.png",
+        link: "./birth-chart.html"
+      },
+      {
+        title: "Horoscope Predictions",
+        description: "Receive daily, weekly, and monthly predictions based on your zodiac sign.",
+        icon: "https://cdn-icons-png.flaticon.com/512/888/888849.png",
+        link: "./horoscope.html"
+      },
+      {
+        title: "Kundli Matching",
+        description: "Check compatibility for marriage and relationships using Vedic astrology principles.",
+        icon: "https://cdn-icons-png.flaticon.com/512/1345/1345763.png",
+        link: "./kundali-matching.html"
+      },
+      {
+        title: "Career & Finance Guidance",
+        description: "Insights and remedies for career growth, job change, business, and financial success.",
+        icon: "https://cdn-icons-png.flaticon.com/512/2490/2490566.png",
+        link: "#"
+      },
+      {
+        title: "Health Astrology",
+        description: "Understand health trends and vulnerable periods through planetary analysis.",
+        icon: "https://cdn-icons-png.flaticon.com/512/2226/2226524.png",
+        link: "#"
+      },
+      {
+        title: "Gemstone Recommendations",
+        description: "Get advice on wearing the right gemstones to balance planetary energies in your chart.",
+        icon: "https://cdn-icons-png.flaticon.com/512/2471/2471972.png",
+        link: "./gemstone.html"
+      },
+      {
+        title: "Vedic Remedies & Pujas",
+        description: "Powerful rituals, mantras, and yantras to remove obstacles and attract success.",
+        icon: "https://cdn-icons-png.flaticon.com/512/3285/3285429.png",
+        link: "#"
+      },
+      {
+        title: "Numerology & Palmistry",
+        description: "Discover personality traits and future events through numbers and palm lines.",
+        icon: "https://cdn-icons-png.flaticon.com/512/3141/3141677.png",
+        link: "#"
+      },
+      {
+        title: "Vastu Consultation",
+        description: "Improve the energy of your home or office with expert Vastu advice.",
+        icon: "https://cdn-icons-png.flaticon.com/512/6259/6259735.png",
+        link: "./consultation.html"
+      }
+    ];
+
+    const grid = document.getElementById('services-grid');
+
+    services.forEach(service => {
+      const card = document.createElement('div');
+      card.className = 'bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition';
+
+      card.innerHTML = `
+        <img src="${service.icon}" alt="${service.title}" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">${service.title}</h3>
+        <p class="text-gray-600 text-sm">${service.description}</p>
+        <div class="mt-4 text-center">
+          <a href="${service.link}" class="text-blue-600 font-medium hover:underline">Learn More</a>
+        </div>
+      `;
+
+      grid.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>

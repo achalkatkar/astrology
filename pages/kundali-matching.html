@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kundali Matching</title>
+  <link rel="stylesheet" href="../css/kundali-matching.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kundali Matching</h1>
+    <form id="kundaliForm">
+      <div class="form-group">
+        <h2>Person 1</h2>
+        <input type="text" name="name1" placeholder="Name" required>
+        <input type="date" name="dob1" required>
+        <input type="time" name="tob1" required>
+        <input type="text" name="pob1" placeholder="Place of Birth" required>
+      </div>
+      <div class="form-group">
+        <h2>Person 2</h2>
+        <input type="text" name="name2" placeholder="Name" required>
+        <input type="date" name="dob2" required>
+        <input type="time" name="tob2" required>
+        <input type="text" name="pob2" placeholder="Place of Birth" required>
+      </div>
+      <button type="submit">Match Kundali</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="../css/kundali-matching.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fdfdfd;
+    color: #333;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #7b4397, #dc2430);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: white;
+    color: #dc2430;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .services {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  .card button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #7b4397;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .booking {
+    padding: 40px 20px;
+    background: #f7f7f7;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+  }
+  
+  input, select, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background: #dc2430;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .confirmation {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+  }
