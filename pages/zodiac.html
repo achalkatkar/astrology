@@ -4,86 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zodiac Signs</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #f3f4f6, #e5e7eb);
-      padding: 40px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      color: #2c3e50;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .zodiac-card {
-      background: white;
-      border-radius: 16px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .zodiac-card:hover {
-      transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 16px 24px rgba(0,0,0,0.2);
-    }
-
-    .zodiac-icon {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 15px;
-      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-      transition: transform 0.4s ease;
-    }
-
-    .zodiac-card:hover .zodiac-icon {
-      transform: rotate(5deg) scale(1.1);
-    }
-
-    .zodiac-name {
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #1f2937;
-    }
-
-    .zodiac-dates {
-      font-size: 0.95rem;
-      color: #6b7280;
-      margin: 5px 0;
-    }
-
-    .zodiac-info {
-      font-size: 0.9rem;
-      color: #374151;
-    }
-
-    @media (max-width: 600px) {
-      .zodiac-card {
-        padding: 15px;
-      }
-      .zodiac-name {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/zodiac.css">
+ 
 </head>
 <body>
 
@@ -175,5 +97,64 @@
     </div>
 
   </div>
+
+    <!-- footer section -->
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>Here comes the best website to learn programming instantly. Hope you will enjoy it. Till that bye!!</p>
+      <div class="custom-social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Get In Touch</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Maharashtra, India</p>
+      <p><i class="fas fa-phone"></i> +91 1234567891</p>
+      <p><i class="fas fa-envelope"></i> programmingxxx@gmail.com</p>
+      <p><i class="fas fa-clock"></i> Mon - Fri, 9AM - 10PM</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Useful Links</h3>
+      <a href="#">Login-in Form</a>
+      <a href="#">CSS Flip Card</a>
+      <a href="#">SkyScraper Game</a>
+      <a href="#">Image Zoomer</a>
+      <a href="#">J.A.R.V.I.S</a>
+      <a href="#">Product Page</a>
+    </div>
+
+    <div class="footer-projects">
+      <h3>Latest Projects</h3>
+      <div class="project-images">
+        <img src="../images/chennai.jpg" alt="project">
+        <img src="../images/chennai.jpg" alt="project">
+        <img src="../images/chennai.jpg" alt="project">
+        <img src="../images/chennai.jpg" alt="project">
+        <img src="../images/chennai.jpg" alt="project">
+        <img src="../images/chennai.jpg" alt="project">
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-subscribe-container">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button class="subscribe-btn">SUBSCRIBE</button>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; Junior Programmer . All Rights Reserved | <a href="#">About</a> | <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Contact</a></p>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mangal Astro</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="./css/horoscope.css"> -->
-  <link rel="stylesheet" href="./css/about.css">
+  
    <!-- Tailwind CSS CDN -->
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -20,13 +24,32 @@
       <a href="#">Home</a>
       <a href="./pages/about.html">About Us</a>
       <a href="./pages/service.html">Services</a>
-      <a href="./pages/product.html">Products</a>
+      <a href="./pages/product.html">Places</a>
       <a href="./pages/zodiac.html">Zodiac </a>
       <a href="./pages/blog.html">Blogs</a>
       <a href="./pages/contact.html">Contact</a>
     </nav>
     <a class="call-btn" href="tel:+919160004027">+91 9160 004 027</a>
   </header>
+
+  <!--section background -->
+
+   <div class="hero">
+    <div class="overlay">
+      <h1>Welcome to Cosmic Insights</h1>
+      <h2>Your Gateway to the Stars</h2>
+      <p>Explore astrology, understand your zodiac, and discover the secrets of the universe aligned just for you.</p>
+      <button>Explore Now</button>
+    </div>
+  </div>
+
+  <div class="background-social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
  <!-- Product Section -->
  <section id="products-section" class="bg-gray-50 py-12 px-4">
   <div class="max-w-7xl mx-auto text-center mb-12">
@@ -114,7 +137,7 @@
 
 <div class="section service-section" id="services">
   <div class="rotating-img">
-    <img src="./images/tarot.jpg" alt="Tarot Reader">
+    <img src="./images/horse.jpg" alt="Tarot Reader">
   </div>
   <div class="service-cards">
     <div class="service-card">Kundli Preparation</div>
@@ -159,25 +182,25 @@
 
   <!-- Right side -->
   <div class="right">
-    <div class="card">
+    <div class="a-card">
       <h3>Kundli Preparation</h3>
       <p>Kundli preparation and detailed report</p>
       <a href="#" class="read-more">Read More →</a>
     </div>
 
-    <div class="card">
+    <div class="a-card">
       <h3>Horoscope Matching</h3>
       <p>Best Horoscope matching Services in Delhi NCR</p>
       <a href="#" class="read-more">Read More →</a>
     </div>
 
-    <div class="card">
+    <div class="a-card">
       <h3>Vaastu Shastra Report</h3>
       <p>Vaastu Shastra report and corrections</p>
       <a href="#" class="read-more">Read More →</a>
     </div>
 
-    <div class="card">
+    <div class="a-card">
       <h3>Finance Horoscope</h3>
       <p>Finance & love horoscope services</p>
       <a href="#" class="read-more">Read More →</a>
@@ -195,24 +218,142 @@
     });
   });
 </script>
-
   <!-- View More Button -->
   <div class="center-button">
     <button onclick="scrollToWhy()">View More</button>
   </div>
 
-  <!-- Why Choose Us Section -->
-  <section class="why-choose" id="whyChoose">
-    <h2>Why Choose Us</h2>
-    <hr />
-    <p>We have enormous knowledge in the field of Astrology<br>
-      which results to Enhance and Excel anyone's life.</p>
-  </section>
+ <!-- customer review section start -->
+  
+  <div class="slider">
+    <div class="cards-wrapper">
+      
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="profile-pic">
+          <img src="./images/client-1 (2).jpg" alt="John Doe">
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p class="review">Great service! Highly recommend.</p>
+        <h3 class="name">John Doe</h3>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="profile-pic">
+          <img src="./images/client-2.jpg" alt="Jane Smith">
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review">Amazing experience!</p>
+        <h3 class="name">Jane Smith</h3>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="profile-pic">
+          <img src="./images/client-3.jpg" alt="Alex Johnson">
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p class="review">Good, but can improve.</p>
+        <h3 class="name">Alex Johnson</h3>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="profile-pic">
+          <img src="./images/client-4.jpg" alt="Lisa Brown">
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p class="review">Very professional team.</p>
+        <h3 class="name">Lisa Brown</h3>
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="profile-pic">
+          <img src="./images/client-5.jpg" alt="Mark Wilson">
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review">Exceeded expectations!</p>
+        <h3 class="name">Mark Wilson</h3>
+      </div>
+  
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="profile-pic">
+          <img src="./images/client-6.jpg" alt="Emily Davis">
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p class="review">Friendly and fast service.</p>
+        <h3 class="name">Emily Davis</h3>
+      </div>
+  
+    </div>
+  </div>
 
+  <!-- customer review section end -->
   <!-- WhatsApp Button -->
   <a href="https://wa.me/919160004027" class="whatsapp-btn" target="_blank">Chat Now</a>
 
   <script src="script.js"></script>
+
+  
+  <!-- footer section -->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>Here comes the best website to learn programming instantly. Hope you will enjoy it. Till that bye!!</p>
+      <div class="custom-social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Get In Touch</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Maharashtra, India</p>
+      <p><i class="fas fa-phone"></i> +91 1234567891</p>
+      <p><i class="fas fa-envelope"></i> programmingxxx@gmail.com</p>
+      <p><i class="fas fa-clock"></i> Mon - Fri, 9AM - 10PM</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Useful Links</h3>
+      <a href="#">Login-in Form</a>
+      <a href="#">CSS Flip Card</a>
+      <a href="#">SkyScraper Game</a>
+      <a href="#">Image Zoomer</a>
+      <a href="#">J.A.R.V.I.S</a>
+      <a href="#">Product Page</a>
+    </div>
+
+    <div class="footer-projects">
+      <h3>Latest Projects</h3>
+      <div class="project-images">
+        <img src="./images/haridwar-1.jpg" alt="project">
+        <img src="./images/haridwar-1.jpg" alt="project">
+        <img src="./images/haridwar-1.jpg" alt="project">
+        <img src="./images/haridwar-1.jpg" alt="project">
+        <img src="./images/haridwar-1.jpg" alt="project">
+        <img src="./images/haridwar-1.jpg" alt="project">
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-subscribe-container">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button class="subscribe-btn">SUBSCRIBE</button>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; Junior Programmer . All Rights Reserved | <a href="#">About</a> | <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Contact</a></p>
+  </div>
+</footer>
 
 
 </body>

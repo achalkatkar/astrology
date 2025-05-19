@@ -67,7 +67,155 @@ h2 {
   padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
-}/* Popular Products */
+}
+
+/* background section */
+.hero {
+  background: url('../images/lady.avif') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 50, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+ .overlay h2{
+  color: #ffd700;
+  margin-top: 10px;
+}
+
+ .overlay p {
+  margin: 20px 0;
+  color: #ddd;
+}
+
+.overlay button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background-color: #ffcc00;
+}
+
+.background-social-icons {
+  position: fixed;
+  top: 40%;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.background-social-icons a {
+  background: #222;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.background-social-icons a:hover {
+  transform: scale(1.2);
+  background: #ffd700;
+  color: black;
+}
+@keyframes rotateBounce {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(30deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.background-social-icons {
+  position: fixed;
+  top: 40%;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.background-social-icons a {
+  background: #222;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: background 0.3s ease;
+}
+
+.background-social-icons a:hover {
+  background: #ffd700;
+  color: black;
+  animation: rotateBounce 1s infinite;
+}
+@keyframes rotateBounce {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(30deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes glowPulse {
+  0%   { box-shadow: 0 0 5px #ffd700; }
+  50%  { box-shadow: 0 0 15px #ffd700, 0 0 25px #ffd700; }
+  100% { box-shadow: 0 0 5px #ffd700; }
+}
+
+.background-social-icons {
+  position: fixed;
+  top: 40%;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.background-social-icons a {
+  background: #222;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: background 0.3s ease;
+}
+
+.background-social-icons a:hover {
+  background: #ffd700;
+  color: black;
+  animation: rotateBounce 1s infinite, glowPulse 1.5s infinite;
+}
+
+
+/* Popular Products */
 .products-grid {
 display: flex;
 flex-wrap: wrap;
@@ -142,6 +290,7 @@ border-radius: 10px;
 text-align: center;
 transition: background 0.3s;
 cursor: pointer;
+color: black;
 }
 .service-card.clicked {
 background: linear-gradient(to right, #f90, #f60);
@@ -172,6 +321,7 @@ padding: 10px;
 margin-bottom: 10px;
 border-radius: 5px;
 border: none;
+color: black;
 }
 form button {
 background: orange;
@@ -203,7 +353,7 @@ margin-top: 30px;
 
 /* Why Choose Us Section */
 .why-choose {
-  background: url('https://i.imgur.com/5z4T1Pz.jpg') no-repeat center center;
+  background: url('/images/dd5fe227-acc4-4126-9d01-8967b5ab58b3.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 80px 20px;
@@ -213,6 +363,7 @@ margin-top: 30px;
 .why-choose h2 {
   font-size: 32px;
   margin-bottom: 10px;
+  color: black;
 }
 
 .why-choose hr {
@@ -224,6 +375,7 @@ margin-top: 30px;
 .why-choose p {
   font-size: 18px;
   line-height: 1.6;
+  color: black;
 }
 
 /* WhatsApp Button */
@@ -335,8 +487,8 @@ margin-top: 30px;
       max-width: 500px;
     }
 
-    .card {
-      background: #fff;
+    .a-card {
+      background: #fde3cd;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       padding: 25px;
@@ -345,25 +497,26 @@ margin-top: 30px;
       cursor: pointer;
     }
 
-    .card:hover {
+    .a-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      background: #f2784b;
     }
 
-    .card h3,
-    .card p,
-    .card a {
+    .a-card h3,
+    .a-card p,
+    .a-card a {
       transition: color 0.3s;
     }
 
-    .card.active {
+    .a-card.active {
       background: linear-gradient(45deg, #f7971e, #ffd200);
       color: white;
     }
 
-    .card.active h3,
-    .card.active p,
-    .card.active a {
+    .a-card.active h3,
+    .a-card.active p,
+    .a-card.active a {
       color: white !important;
     }
 
@@ -371,7 +524,7 @@ margin-top: 30px;
       display: inline-block;
       margin-top: 10px;
       font-size: 0.85em;
-      color: #f2784b;
+      color: #706561;
       text-decoration: none;
     }
 
@@ -386,3 +539,185 @@ margin-top: 30px;
         max-width: 360px;
       }
     }
+
+
+    
+/* customer review section start */
+.slider {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stars {
+  font-size: 22px;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.review {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Hide scrollbar */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* customer review section end */
+
+    
+/* footer section */
+.custom-footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-container > div {
+  flex: 1 1 200px;
+}
+.footer-about p,
+.footer-contact p {
+  margin: 8px 0;
+}
+.custom-social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.custom-social-icons a:hover {
+  color: orange;
+}
+.footer-links a {
+  display: block;
+  margin: 6px 0;
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: orange;
+}
+.footer-projects .project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.footer-projects img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.custom-subscribe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.custom-subscribe-container input {
+  flex: 1 1 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.subscribe-btn {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.subscribe-btn:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.footer-bottom a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.footer-bottom a:hover {
+  color: orange;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .custom-subscribe-container {
+    flex-direction: column;
+  }
+  .custom-subscribe-container input,
+  .subscribe-btn {
+    width: 100%;
+  }
+}
